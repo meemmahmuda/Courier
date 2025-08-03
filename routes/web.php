@@ -20,7 +20,6 @@ Route::group(['middleware' => 'admin.guest'], function () {
     Route::get('/register', [AdminController::class, 'register'])->name('admin.register');
     // Route::get('/admin_login', [AdminController::class, 'login'])->name('admin.login');
     Route::post('admin_login', [AdminController::class, 'authenticate'])->name('admin.authenticate');
-
 });
 
 
