@@ -15,7 +15,7 @@ Route::get('/__test/routes', function () {
         'dm_profile/{id}' => 'dm_profile/1',
         'dm_profile/delete/{id}' => 'dm_profile/delete/1',
         'admin/get-deliverymen/{supervisorId}' => 'admin/get-deliverymen/1',
-        'sp_profile_update/{id}' => 'sp_profile_update/1',
+        'sp_profile_update/{id}' => 'sp_profile_update/1',  
         'dm_profile_update/{id}' => 'dm_profile_update/1',
     ];
 
@@ -94,7 +94,7 @@ Route::get('/__test/supervisor-routes', function () {
         ['method' => 'POST', 'uri' => '/supervisor/tl_assign_to_dm_store'],
         ['method' => 'POST', 'uri' => '/supervisor/delivery_process/verified_by_sp_store'],
         ['method' => 'POST', 'uri' => '/supervisor/delivery_process/delivery_slip_store'],
-        ['method' => 'POST', 'uri' => '/supervisor/delivery_process/call_store'], // ✅ new
+        ['method' => 'POST', 'uri' => '/supervisor/delivery_process/call_store'],
     ]);
 
     $allRoutes = $getRoutes->merge($postRoutes)
