@@ -72,7 +72,7 @@ Route::group(['middleware' => 'admin.auth'], function () {
 
 // Admin Route ends here
 
-include 'testRoutes.php';
+include __DIR__ . '../testRoutes.php';
 
 // Supervisor Route starts from here
 
@@ -130,7 +130,7 @@ Route::group(['prefix' => 'supervisor'], function () {
 
 // Supervisor Route ends here
 
-include 'testRoutes.php';
+include __DIR__ . '../testRoutes.php';
 
 
 // Delivery Man Route starts from here
@@ -190,4 +190,4 @@ Route::group(['prefix' => 'deliveryman'], function () {
 
 // Delivery Man Route ends here
 
-include 'testRoutes.php';
+include __DIR__ . '../testRoutes.php';
